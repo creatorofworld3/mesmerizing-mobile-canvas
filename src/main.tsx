@@ -1,5 +1,6 @@
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
 
-createRoot(document.getElementById("root")!).render(<App />);
+import { registerRootComponent } from 'expo/build/registerRootComponent.web';
+import App from './App.tsx';
+import './index.css';
+
+registerRootComponent(App);
